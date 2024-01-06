@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>CSS Selectors and Specificity</title>
+    <link href="resources/styles.css" type="text/css" rel="stylesheet" /> 
+
+   </head>
+
+   <body>
+<!-- This is where the table will go-->
+<h2>CSS Selectors</h2>
+<table>
+    <thead>
+        <tr class="TableHeader">
+            <th>Name</th>
+            <th>Description</th>
+            <th>Example</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Universal Selector</td>
+            <td>Applies to all elements in the document</td> 
+            <td class="example">*{}</td>
+        </tr>
+        <tr>
+            <td>Type Selector</td>
+            <td>Matches element names</td>
+            <td class="example">h1, h2, h3{}</td>
+        </tr>
+        <tr>
+            <td>Class Selector</td>
+            <td>Matches an element whose class attribute has a value that matches that one specified after the period (or full stop) symbol</td>
+            <td class="example">.class{}</td>
+        </tr>
+        <tr>
+            <td>ID Selector</td>
+            <td>Matches an element whose ID attribute has a value that matches the one specified after the pound or hash symbol</td>
+            <td class="example">#id{}</td>
+        </tr>
+        <tr>
+            <td>Child Selector</td>
+            <td>Matches an element that is a direct child of another</td>
+            <td class="example">ul>li{}</td>
+        </tr>
+        <tr>
+            <td>Descendent Selector</td>
+            <td>Matches an element that is a descendent of another specified element (not just a direct child of that element)</td>
+            <td class="example">p a {}</td>
+        </tr>
+        <tr>
+            <td>Adjacent Sibling Selector</td>
+            <td>Matches an element that is the next sibling of another</td>
+            <td class="example">h1 + p{}</td>
+        </tr>
+        <tr>
+            <td>General Sibling Selector</td>
+            <td>Matches an element that is a sibling of another, although it does not have to be the directly preceding element</td>
+            <td class="example">h1~p{}</td>
+        </tr>
+        <tr>
+            <td>Attribute Selector</td>
+            <td>Used to select elements with a specified attribute, which can contain a specified name or value</td>
+            <td class="example"> a[attribute] {} or a[attribute="value"] {}</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<!-- do we want to add a second table discussing Specificity?-->
+
+<h2>CSS Specificity</h2>
+<p>Specificity is a ranking system that is used when there are multiple conflicting property values that point to the same element. When determining which rule to apply, the selector with the highest specificity wins out.
+    The most specific selector type is the ID selector, followed by class selectors, followed by type selectors. 
+</p>
+
+
+
+   </body>
+
+
+</html>

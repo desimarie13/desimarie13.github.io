@@ -1,0 +1,27 @@
+body {
+    font-family:'Courier New', Courier, monospace; 
+    background-color: papayawhip;
+}
+
+table {
+    border: 1px solid;
+    border-color: black;
+    border-collapse: collapse;
+}
+
+.TableHeader {
+    background-color: Salmon; 
+}
+.example {
+    background-color: lightsalmon; 
+}
+
+th, td {
+    padding: 10px;
+    table-layout: fixed; 
+}
+
+h2 {
+    font-weight: bold;
+    text-align: center; 
+}
